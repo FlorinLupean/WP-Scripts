@@ -2,7 +2,7 @@
 
 # Dumping  MYSQL information
 
-
+#Avoid the strip at the end of the directory when auto completion
 SITE=${1%/}
 
 DB_NAME=$( cat $SITE/wp-config.php | grep "DB_NAME" | cut -d "'" -f4 )
